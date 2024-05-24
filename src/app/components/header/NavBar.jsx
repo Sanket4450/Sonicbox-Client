@@ -4,7 +4,7 @@ import { DarkModeSwitch } from './DarkModeSwitch'
 
 export const NavBar = () => {
   return (
-    <header className=" flex justify-between h-14 items-center px-4 sm:px-8 drop-shadow-md">
+    <header className=" flex justify-between h-14 items-center px-5 sm:px-8 drop-shadow-md">
       <h3 className=" text-primary text-2xl font-bold">SonicBox</h3>
       <div className=' flex items-center gap-1'>
         <div className=" bg-black size-8 flex justify-center items-center rounded-full hover:cursor-pointer">
