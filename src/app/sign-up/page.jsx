@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useFormik } from 'formik'
-import { loginSchema } from '@/schemas'
+import { signupSchema } from '@/schemas'
 import { BasicTextField, PasswordField } from '../components/common'
 
 export default () => {
@@ -12,8 +12,9 @@ export default () => {
       initialValues: {
         email: '',
         password: '',
+        confirmPassword: '',
       },
-      validationSchema: loginSchema,
+      validationSchema: signupSchema,
       onSubmit: (values) => {
         console.log(values)
       },
@@ -52,18 +53,32 @@ export default () => {
           error={touched.password && errors.password ? errors.password : ''}
           width="85vw"
         />
+        <PasswordField
+          id="confirm-password"
+          label="Confirm Password"
+          name="confirmPassword"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.confirmPassword}
+          error={
+            touched.confirmPassword && errors.confirmPassword
+              ? errors.confirmPassword
+              : ''
+          }
+          width="85vw"
+        />
         <button
           type="submit"
           className="bg-secondary text-theme-white hover:bg-theme-light-purple font-semibold rounded-md w-[85vw] max-w-[450px] py-2 my-14 transition duration-200">
-          Sign in
+          Sign Up
         </button>
       </form>
       <div className=" text-far-gray font-semibold text-center">
-        Don't have an account?{' '}
+        Already have an account?{' '}
         <Link
-          href={'/sign-up'}
+          href={'/sign-in'}
           className=" text-theme-purple font-bold hover:text-theme-light-purple transition duration-200">
-          Sign Up
+          Sign in
         </Link>
       </div>
     </div>

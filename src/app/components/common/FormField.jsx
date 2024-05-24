@@ -12,6 +12,7 @@ import {
 import { Visibility, VisibilityOff } from '@mui/icons-material'
 
 export const BasicTextField = ({
+  id,
   label,
   name,
   onChange,
@@ -26,7 +27,7 @@ export const BasicTextField = ({
         '& > :not(style)': { m: '10px 0', width, maxWidth: '450px' },
       }}>
       <TextField
-        id="standard-basic"
+        id={id}
         name={name}
         label={label}
         variant="standard"
@@ -65,6 +66,7 @@ export const BasicTextField = ({
 }
 
 export const PasswordField = ({
+  id,
   label,
   name,
   onChange,
@@ -111,9 +113,9 @@ export const PasswordField = ({
           '& > :not(style)': { color: 'var(--text-primary)' },
         }}
         variant="standard">
-        <InputLabel htmlFor="standard-adornment-password">{label}</InputLabel>
+        <InputLabel htmlFor={id}>{label}</InputLabel>
         <Input
-          id="standard-adornment-password"
+          id={id}
           name={name}
           type={showPassword ? 'text' : 'password'}
           onChange={onChange}
