@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { useFormik } from 'formik'
 import { profileSchema } from '@/schemas'
 import { BasicTextField, SelectField, FileField } from '../components/common'
