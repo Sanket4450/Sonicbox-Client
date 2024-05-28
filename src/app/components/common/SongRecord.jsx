@@ -179,13 +179,13 @@ export const SongSimpleColumn = ({
           />
           {isHovered && isPlaying && (
             <TbPlayerPauseFilled
-              className=" text-primary text-lg absolute top-[33%] left-[34%]"
+              className=" text-primary text-lg absolute top-[32%] left-[33.5%]"
               onClick={handlePlay}
             />
           )}
           {isHovered && !isPlaying && (
             <IoMdPlay
-              className=" text-primary text-lg absolute top-[33%] left-[34%]"
+              className=" text-primary text-lg absolute top-[32%] left-[33.5%]"
               onClick={handlePlay}
             />
           )}

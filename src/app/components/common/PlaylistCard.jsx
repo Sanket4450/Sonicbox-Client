@@ -4,9 +4,8 @@ import SongImage from '@/assets/images/default-song.jpeg'
 
 export const PlaylistCard = ({ img, title, owner }) => {
   return (
-    <div
-      className=" p-3 space-y-2 hover:cursor-pointer hover:bg-text-highlight-light rounded-md">
-      <div className=' w-[100%] aspect-square'>
+    <div className=" p-3 space-y-2 hover:cursor-pointer hover:bg-text-highlight-light rounded-md">
+      <div className=" w-[100%] aspect-square">
         <img
           src={img || SongImage}
           alt=""

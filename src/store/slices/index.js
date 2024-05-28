@@ -1,3 +1,4 @@
 import themeSlice from './theme'
+import searchSlice from './search'
 
-export { themeSlice }
+export { themeSlice, searchSlice }

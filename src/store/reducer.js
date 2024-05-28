@@ -1,3 +1,3 @@
-import { themeSlice } from './slices'
+import { themeSlice, searchSlice } from './slices'
 
-export const reducer = { theme: themeSlice }
+export const reducer = { theme: themeSlice, search: searchSlice }
