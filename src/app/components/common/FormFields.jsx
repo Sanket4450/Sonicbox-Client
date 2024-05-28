@@ -1,3 +1,5 @@
+'use client'
+
 import { forwardRef, useState } from 'react'
 import { BiPencil } from 'react-icons/bi'
 import {

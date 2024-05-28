@@ -1,0 +1,80 @@
+export const playlists = [
+  {
+    id: 1,
+    title: 'Atif Aslam Songs',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Sanket Talaviya',
+  },
+  {
+    id: 2,
+    title: 'Arijit Aslam Songs',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Local Mc-gurg',
+  },
+  {
+    id: 3,
+    title: 'Indian Tracks',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Pencil William',
+  },
+  {
+    id: 4,
+    title: 'Rock Tracks',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Neil Woakes',
+  },
+  {
+    id: 5,
+    title: 'EDM Songs',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Harvard Potts',
+  },
+  {
+    id: 6,
+    title: 'Romantic Songs',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Peter Mails',
+  },
+  {
+    id: 7,
+    title: 'DJ Dalal Mix',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Peter Mails',
+  },
+  {
+    id: 8,
+    title: 'Local Songs',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Will George',
+  },
+  {
+    id: 9,
+    title: 'Global Songs',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Will George',
+  },
+  {
+    id: 10,
+    title: 'English Tracks',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Peter Mails',
+  },
+  {
+    id: 11,
+    title: 'Spanish Hits',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Noir Vox',
+  },
+  {
+    id: 12,
+    title: 'Sufi Songs',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Nathan Wild',
+  },
+  {
+    id: 13,
+    title: 'Popular Songs',
+    img: 'https://picsum.photos/100',
+    playlistOwner: 'Tony Jax',
+  },
+]

@@ -13,7 +13,7 @@ export default () => {
   const [selectedArtists, setSelectedArtists] = useState([])
 
   const handleChange = (e) => {
-    setSearchValue(e.target.searchValue)
+    setSearchValue(e.target.value)
   }
 
   const handleFocus = () => {
@@ -42,10 +42,10 @@ export default () => {
       <h2 className=" text-primary font-semibold text-center py-2">
         Choose 3 or more artists you like.
       </h2>
-      <div className=" px-[2vw] my-2 flex justify-between">
+      <div className=" px-[2vw] my-2 flex max-phone:flex-col justify-between max-phone:gap-y-2">
         <div
           ref={searchBarRef}
-          className=" bg-theme-white text-theme-black border-[2px] border-theme-black rounded-md flex items-center w-[75%] sm:w-[85%] xl:w-[88%]">
+          className=" bg-theme-white text-theme-black border-[2px] border-theme-black rounded-md flex items-center w-[100%] phone:w-[75%] sm:w-[85%] xl:w-[88%]">
           <div className=" px-3 py-3">
             <IoSearch className=" text-xl" />
           </div>
@@ -56,12 +56,12 @@ export default () => {
             searchValue={searchValue}
             placeholder="Search for artists..."
             onChange={handleChange}
-            className=" w-full px-3 py-3 focus:outline-none bg-transparent"
+            className=" w-full pr-3 py-3 focus:outline-none bg-transparent"
             onFocus={handleFocus}
             onBlur={handleBlur}
           />
         </div>
-        <Button className=" bg-theme-purple text-theme-white w-[24%] sm:w-[14%] xl:w-[11%] font-semibold text-lg rounded-md transition duration-200 hover:bg-theme-light-purple">
+        <Button className=" bg-theme-purple text-theme-white w-[100%] phone:w-[24%] sm:w-[14%] xl:w-[11%] max-phone:py-2 font-semibold text-lg rounded-md transition duration-200 hover:bg-theme-light-purple">
           Done
         </Button>
       </div>
@@ -71,7 +71,7 @@ export default () => {
             key={artist.id}
             className=" text-primary flex flex-col items-center justify-center select-none">
             <div
-              className=" w-32 h-32 relative rounded-full flex items-center justify-center overflow-hidden"
+              className=" w-32 h-32 relative rounded-full overflow-hidden"
               onClick={() => handleArtistClick(artist.id)}>
               <Image
                 src={artist.image}
